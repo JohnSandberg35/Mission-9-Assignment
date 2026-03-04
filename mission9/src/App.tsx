@@ -1,7 +1,7 @@
 import './App.css';
 import teamData from './CollegeBasketballTeams.json';
 
-function Heading() {
+function Heading() {  //This function is called and it prints out the text showing what the march madness tournament is
   return (
     <div className="header-section">
       <h1>NCAA Basketball Teams</h1>
@@ -14,6 +14,7 @@ function Heading() {
   );
 }
 
+// This Team Card function grabs the individual team information for each team so it can be displayed
 function TeamCard(props: { school: string; name: string; city: string; state: string }) {
   return (
     <div className="team-card">
@@ -23,6 +24,7 @@ function TeamCard(props: { school: string; name: string; city: string; state: st
   );
 }
 
+// The TeamList function grabs each individual team information that is collected above and then displays it
 function TeamList() {
   return (
     <>
